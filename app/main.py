@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template
-from flask_sqlalchemy import SQLALchemy
+from flask_sqlalchemy import SQLAlchemy
 from config import DATABASE_URL
 from models.User import db, Usuario
 from models.Tarea import Tarea
