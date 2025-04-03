@@ -1,6 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 
-db = SQLALchemy()
+db = SQLAlchemy()
 
 class Proyecto(db.model):
     id = db.Column(db.Integer, primary_key = True)

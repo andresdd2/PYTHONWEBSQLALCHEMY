@@ -1,6 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 
-db = SQLALchemy()
+db = SQLAlchemy()
 
 class Usuario(db.model):
     id = db.Column(db.Integer, primary_key = True)
