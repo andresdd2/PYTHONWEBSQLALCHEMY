@@ -1,5 +1,4 @@
 import os
 
-conexion = "mysql+pymysql://root:password@db/flaskapp"
-DATABASE_URL = os.getenv("DATABASE_URL", conexion)
+DATABASE_URL = os.getenv("DATABASE_URL", "mysql+pymysql://root:password@db/flaskapp")
 
