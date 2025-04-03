@@ -7,11 +7,11 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: 'flaskapp'
-      MYSQL_USER: 'root'
-      MYSQL_PASSWORD: 'password'
       MYSQL_ROOT_PASSWORD: 'password'
     ports:
       - '3340:3306'
+    volumes:
+      - mysql_data:/var/lib/mysql
   
   app:
     container_name: flask_web
